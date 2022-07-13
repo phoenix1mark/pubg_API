@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">My ApplicationApipbg</string>
+    <string name="id">Ведите никнейм</string>
+    <string name="search">Search!</string>
+    <string name="result">Результат будет отображен здесь</string>
+    <string name="myLogin">Phoenix-0-0-7</string>
+    <string name="_5">5 последних матчей</string>
+    <string name="textview">TextView</string>
+</resources>
