@@ -1,6 +1,7 @@
 package com.example.myapplicationapipbg;
 
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -14,6 +15,7 @@ import com.example.myapplicationapipbg.utils.ParseLastMapFromFiveMatches;
 import com.example.myapplicationapipbg.utils.Thread1ResultAPI;
 import com.example.myapplicationapipbg.utils.Thread2ResultMatchesForPlayer;
 import com.example.myapplicationapipbg.utils.Thread3ParserForMatch;
+import com.example.myapplicationttt.R;
 
 import org.json.JSONObject;
 
@@ -111,6 +113,7 @@ public class MainActivity extends AppCompatActivity {
         b1.setOnClickListener(new View.OnClickListener() {  // Вторая кнопка
 
 
+             @SuppressLint("LongLogTag")
              @Override
              public void onClick(View v) {
                  String nameOfUser = searchField.getText().toString();
@@ -210,6 +213,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         searchButton.setOnClickListener(new View.OnClickListener() {
+            @SuppressLint("LongLogTag")
             @Override
             public void onClick(View v) {   //сценарий нажатия кнопки//
                 b1.setVisibility(View.INVISIBLE);
@@ -289,15 +293,7 @@ public class MainActivity extends AppCompatActivity {
                     mapRes5.setText("");
                     rankRes5.setText("");
                 }
-
-
             }
         });
-
-
-
     }
-
-
-
 }
